@@ -1,0 +1,10 @@
+2025-04-05 04:36:16 - ERROR - Insufficient stock for order 7: Not enough stock for Laptop. Available: 0
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\TechShop\Dao\OrderDAO.py", line 43, in create
+    raise InsufficientStockException(
+exception.dataException.InsufficientStockException: Not enough stock for Laptop. Available: 0
+2025-04-05 06:16:17 - ERROR - Unexpected error creating order: Payment declined: Amount exceeds $1000 limit
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\TechShop\Dao\OrderDAO.py", line 75, in create
+    raise PaymentFailedException("Payment declined: Amount exceeds $1000 limit")
+exception.dataException.PaymentFailedException: Payment declined: Amount exceeds $1000 limit
